@@ -19,9 +19,8 @@
 project(openlase)
 
 cmake_minimum_required(VERSION 2.6)
-
+set(PYTHON_EXECUTABLE "/usr/bin/python2")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/Modules/")
-
 if(CMAKE_SIZEOF_VOID_P EQUAL 8)
   set(BITS 64)
 else()
